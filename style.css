@@ -1,0 +1,319 @@
+
+/*Navigation bar*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+.heading h1 {
+
+    color: white;
+
+}
+.heading2 p{
+    font-size: 1rem;
+    margin-top: 3%;
+    color: white;
+    font-weight: 300;
+}
+.aboutself{
+    margin-top: 4%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+
+}
+.aboutself p{
+    margin-top: 1%;
+    font-size: 1.4rem;
+}
+.heroheading {
+    text-align: center;
+    margin-top: 4%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.herosections{
+    background-color: #F5F5F5;
+}
+span{
+    margin-left: 12%;
+    margin-right: 12%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+span p{
+    display: block;
+}
+img{
+    width: 190px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: 0.3s;
+}
+img:hover{
+    transform: translateY(-10px);
+}
+ .para {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16%;
+    margin-right: 16%;
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+.contact{
+   text-align: center;
+    margin-top: 4%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+/* ----------------form sectioon----------*/
+.formofcontact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input{
+    width: 800px;
+    height:50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-left: 16px;
+    border: 2px solid  rgba(231, 229, 229, 0.952);
+}
+textarea{
+     width: 800px;
+    height:150px;
+     margin-top: 25px;
+      padding-left: 16px;
+        border-radius: 5px;
+    border: 2px solid  rgba(231, 229, 229, 0.952);
+}
+textarea::placeholder{
+    font-size: 1rem;
+    margin-left: 20px;
+}
+#submit {
+    width: 400px;
+     background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color: #F5F5F5;
+    border-radius: 1px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+html{
+    opacity: 0;
+    animation-name: fadein;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+         transform: translateY();
+    }
+}
+@media (max-width:640px) {
+    img{
+        width: 140px;
+    }
+    .aboutself p{
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 1.2rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    input{
+        width: 500px;
+    }
+    textarea{
+        width: 500px;
+    }
+#submit::placeholder {
+    font-size: 0.4rem;
+}
+#submit {
+    margin-top: 30px;
+    width: 50%;
+}
+    
+
+}
+@media (max-width:375px) {
+    img{
+        width: 90px;
+    }
+    .aboutself p{
+        font-size: 0.6rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 1rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    .para p{
+        font-size: 0.6rem;
+    }
+
+}
+/* Media query for iPhone XR only */
+@media only screen 
+  and (device-width: 414px ) 
+  and (device-height: 896px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    
+    img {
+        width: 120px;
+    }
+    .aboutself p {
+        font-size: 0.75rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    input {
+        width: 380px;
+    }
+    textarea {
+        width: 380px;
+    }
+    #submit {
+        width: 65%;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:390px) {
+    img{
+        width: 90px;
+    }
+    .aboutself p{
+        font-size: 0.6rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 1rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    .para p{
+        font-size: 0.6rem;
+    }
+
+    
+}
+/* Media query for iPhone 14 Pro Max only */
+@media only screen 
+  and (device-width: 430px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    img {
+        width: 110px;
+    }
+
+    .aboutself p {
+        font-size: 0.5rem;
+        line-break: anywhere;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    #submit {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+@media (width:412px) {
+       img {
+        width: 80px;
+    }
+
+    .aboutself p {
+        font-size: 0.5rem;
+        line-break: anywhere;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    textarea {
+        width: 250px;
+    }
+
+    #submit {
+        width: 50%;
+        font-size: 1rem;
+    }
+    
+}
